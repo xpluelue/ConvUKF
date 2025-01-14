@@ -58,7 +58,7 @@ def vis(args):
 	seq_count = 0
 	for seq in seq_eval:
 		image_dir = os.path.join(trk_root, 'image_02/%s' % seq)
-		calib_file = os.path.join(trk_root, 'calib/%s.txt' % seq)
+		calib_file = os.path.join(trk_root, 'calib/00%s.txt' % seq)
 		result_dir = os.path.join(result_root, 'trk_withid_%d/%s' % (args.hypo_index_vis, seq))
 		save_3d_bbox_dir = os.path.join(result_dir, '../../trk_image_vis/%s' % seq); mkdir_if_missing(save_3d_bbox_dir)
 

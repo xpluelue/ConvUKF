@@ -2,7 +2,7 @@ import numpy as np, json
 from numba import jit
 from xinshuo_io import fileparts
 
-@jit
+@jit  
 def rotx(t):
     """Rotation about the x-axis."""
     c = np.cos(t)
@@ -11,7 +11,7 @@ def rotx(t):
                      [0,  c, -s],
                      [0,  s,  c]])
 
-@jit
+@jit 
 def roty(t):
     """Rotation about the y-axis."""
     c = np.cos(t)

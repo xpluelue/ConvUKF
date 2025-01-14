@@ -89,7 +89,7 @@ def initialize(cfg, data_root, save_dir, subfolder, seq_name, cat, ID_start, hw,
 	imu_poses = load_oxts(oxts)                 # seq_frames x 4 x 4
 
 	# load calibration
-	calib = os.path.join(data_root, subfolder, 'calib', seq_name+'.txt')
+	calib = os.path.join(data_root, subfolder, 'calib', '00'+seq_name+'.txt')
 	calib = Calibration(calib)
 
 	# load image for visualization
